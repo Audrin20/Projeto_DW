@@ -1,4 +1,174 @@
 * {
-    margin: 0; 
-    padding: 0
+    margin: 0;
+    padding: 0;
+}
+
+nav {   
+    display: inline-block;
+    padding: 0;
+}
+
+nav li{
+    text-align: center;
+    /* border-bottom: 1px solid red; */
+    list-style-type: none;
+    color: black;
+    
+}
+
+nav ul{
+    color: white;
+    padding: 0;
+}
+
+@media screen and (min-width: 320px){
+    nav {
+        display: block;
+        text-align: center;
+        padding: 0;
+        width: 100vw;
+    }    
+    
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 5px;
+    }
+
+    .container div {
+        border: 1px solid red;
+    }
+
+}
+
+@media screen and (min-width: 400px){
+    nav {
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    header {
+        text-align: center;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    nav li{
+        text-align: center;
+        list-style-type: none;
+        color: black;
+        text-decoration: none;
+    }
+    
+    nav li a{
+        text-decoration: none;
+    }
+
+    nav li a:hover{
+        color:yellow;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 5px;
+    }
+
+    .container div {
+        border: 1px solid red;
+    }
+
+}
+
+
+@media screen and (min-width: 600px){
+    nav {
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    header {
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-block;
+
+    }
+    nav ul{
+        text-align: right;
+    }
+
+    nav li{
+        text-align: center;
+        list-style-type: none;
+        color: black;
+        text-decoration: none;
+    }
+    
+    nav li a{
+        text-decoration: none;
+    }
+
+    nav li a:hover{
+        color:yellow;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 5px;
+    }
+
+    .container div {
+        border: 1px solid red;
+    }
+}
+
+@media screen and (min-width: 900px){
+    nav {
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    header {
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-block;
+
+    }
+    nav ul{
+        text-align: right;
+    }
+
+    nav li{
+        text-align: center;
+        list-style-type: none;
+        color: black;
+        text-decoration: none;
+    }
+    
+    nav li a{
+        text-decoration: none;
+    }
+
+    nav li a:hover{
+        color:yellow;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 5px;
+    }
+
+    .container div {
+        border: 1px solid red;
+    }
 }
