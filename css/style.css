@@ -3,42 +3,62 @@
     padding: 0;
 }
 
-nav {   
-    display: inline-block;
-    padding: 0;
-}
-
-nav li{
-    text-align: center;
-    /* border-bottom: 1px solid red; */
-    list-style-type: none;
-    color: black;
-    
-}
-
-nav ul{
-    color: white;
-    padding: 0;
-}
-
 @media screen and (min-width: 320px){
     nav {
         display: block;
         text-align: center;
         padding: 0;
         width: 100vw;
-    }    
+    } 
     
+    .navbar ul li a{
+        text-decoration: none;
+        color: white
+    }
+
+    .navbar ul li {
+        padding: 5px;
+        background-color:#808090;
+        border: 1px solid black;
+    }
+
+    .navbar ul li:nth-child(odd){
+        background-color: grey;
+    }
+
     .container {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 28vw auto auto auto;
         margin-top: 5px;
     }
-
-    .container div {
-        border: 1px solid red;
+    
+    .item1 {
+        border-right: 1px solid black;
+        margin: 1px;
     }
 
+    .item1 ul li {
+        text-align: center;
+        padding: 5px;
+        
+    }
+
+    .borders li{
+        border: 1px solid black;
+    }
+    
+    .borders #border-top {
+        border-top: 0px;
+    }
+
+    .borders .border-right{
+        border-right: 200px
+    }
+
+    .borders li a{
+        text-decoration: none;
+        color: green;
+    }
 }
 
 @media screen and (min-width: 400px){
@@ -72,16 +92,10 @@ nav ul{
 
     .container {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 25vw auto auto auto;
         margin-top: 5px;
     }
-
-    .container div {
-        border: 1px solid red;
-    }
-
 }
-
 
 @media screen and (min-width: 600px){
     nav {
@@ -99,7 +113,7 @@ nav ul{
 
     }
     nav ul{
-        text-align: right;
+        text-align: center;
     }
 
     nav li{
@@ -119,12 +133,8 @@ nav ul{
 
     .container {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 20vw auto auto auto;
         margin-top: 5px;
-    }
-
-    .container div {
-        border: 1px solid red;
     }
 }
 
@@ -164,11 +174,7 @@ nav ul{
 
     .container {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 20vw auto auto auto;
         margin-top: 5px;
-    }
-
-    .container div {
-        border: 1px solid red;
     }
 }
