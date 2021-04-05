@@ -59,6 +59,54 @@
         text-decoration: none;
         color: green;
     }
+    
+    /* Equipment */
+
+    .container-equipment {
+        display: grid;
+        grid-template-columns: 28vw auto;
+    }
+
+    .item2 ul li {
+        display: inline;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .button-action {
+        text-align: center;
+        margin-top: 1px;
+    }
+
+    .button-action button {
+        padding: 2px;
+    }
+
+    /* equipment table */
+    .table-date {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1px
+    }
+    .table-date table{
+        margin: 1px 0px 0px 1px;
+        border-collapse: collapse;
+        text-align: center;
+
+    }
+    
+    .table-date table thead th{
+        border: 1px solid black;
+        
+    }
+
+    .table-date table tbody td{
+        border: 1px solid black;
+        text-align: center;
+    }
+    
 }
 
 @media screen and (min-width: 400px){
