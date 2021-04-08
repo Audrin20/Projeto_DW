@@ -98,7 +98,6 @@
         justify-content: center;
         align-items: center;
         margin-top: 1px;
-
     }
 
     .table-date table{
@@ -117,9 +116,21 @@
         border: 1px solid black;
         text-align: center;
     }
+    /* Tela de Monitoração */
 
     .item {
         text-align: center;
+    }
+    
+    /* Exibição de Equipe ( Funcionários ) */
+    
+    .item2-equipe table{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1px;
+        border: 2px solid black;
     }
 }
 
