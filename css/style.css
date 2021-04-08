@@ -118,6 +118,9 @@
         text-align: center;
     }
 
+    .item {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 400px){
