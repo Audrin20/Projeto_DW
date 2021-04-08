@@ -18,17 +18,13 @@
 
     .navbar ul li {
         padding: 5px;
-        background-color:#808090;
+        background-color: #343A40;
         border: 1px solid black;
-    }
-
-    .navbar ul li:nth-child(odd){
-        background-color: grey;
     }
 
     .container {
         display: grid;
-        grid-template-columns: 28vw auto auto auto;
+        grid-template-columns: 30vw auto auto auto;
         margin-top: 5px;
     }
     
@@ -57,15 +53,16 @@
 
     .borders li a{
         text-decoration: none;
-        color: green;
+        color: #343A40;
     }
     
     /* Equipment */
 
     .container-equipment {
         display: grid;
-        grid-template-columns: 28vw auto;
-    }
+        grid-template-columns: 30vw auto;
+        margin-top: 5px;
+    } 
 
     .item2 ul li {
         display: inline;
@@ -74,8 +71,17 @@
     }
 
     .button-action {
-        text-align: center;
+        text-align: left;
         margin-top: 1px;
+    }
+
+    .item1 {
+        border-right: 1px solid black;
+        margin: 1px;
+    } 
+    .item1 ul li {
+        text-align: center;
+        padding: 5px;
     }
 
     .button-action button {
@@ -88,10 +94,11 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 1px
+        margin-top: 1px;
+
     }
+
     .table-date table{
-        margin: 1px 0px 0px 1px;
         border-collapse: collapse;
         text-align: center;
 
@@ -99,6 +106,7 @@
     
     .table-date table thead th{
         border: 1px solid black;
+        padding: 5px;
         
     }
 
@@ -106,7 +114,7 @@
         border: 1px solid black;
         text-align: center;
     }
-    
+
 }
 
 @media screen and (min-width: 400px){
