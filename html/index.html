@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Gestor de Estoque</title>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Equipe</a></li>
-            </ul>
-        </nav>
-    </header> <!-- Menu Nav -->
-    <section>
-        <div class="container">
-            <div class="item1">
-                <ul class="borders">
-                    <li class="border-right"><a href="../html/equipamento.html">Equipamento</a></li>
-                    <li class="border-right" id="border-top"><a href="../html/setor.html">Setor</a></li>
-                    <li class="border-right" id="border-top"><a href="../html/equipe.html">Equipe</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">GESTOQUE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home<span class="sr-only">(Página Atual)</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./estoque.html">Estoque</a></li>
+                    <li class="nav-item"></li>
                 </ul>
             </div>
-            <div class="item" id="mon1">Monitoração 1</div>
-            <div class="item" id="mon2">Monitoração 2</div>
-            <div class="item" id="mon3">Monitoração 3</div>
-        </div>            
+        </nav>
+    </header> <!-- Menu Nav -->      
+    <section>
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-sm">
+                    OPERANDO
+                </div>
+                <div class="col-sm">
+                    ATIVOS
+                </div>
+                <div class="col-sm">
+                    INATIVOS
+                </div>
+            </div>
+        </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
