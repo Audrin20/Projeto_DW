@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Gestor de Estoque</title>
@@ -20,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home<span class="sr-only">(Página Atual)</span></a>
+                        <a class="nav-link" href="./index.html">Home<span class="sr-only">(P?gina Atual)</span></a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="./estoque.html">Estoque</a></li>
                     <li class="nav-item"><a class="nav-link" href="./equipe.html">Equipe</a></li>
@@ -29,12 +30,66 @@
             </div>
         </nav>
     </header> <!-- Menu Nav -->      
+
+    
+    
+    <form id="hostForm">
+        <div class="modal fade" id="hostFormModal" tabindex="-1" aria-labelledby="hostFormLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="hostFormLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="host-name">Nome</label>
+                  <input type="text" class="form-control" id="host-nome" name="name">
+                </div>
+                <div class="form-group">
+                  <label for="host-address">Preço</label>
+                  <input type="text" class="form-control" id="host-preco" name="address">
+                </div>
+                <div class="form-group">
+                  <label for="host-mask">Data de modificação</label>
+                  <input type="text" class="form-control" id="data-de-modificacao" name="mask">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-primary">Confirmar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+
     <section>
         <div class="buttons">
-            <button type="button" class="btn btn-outline-success">Novo</button>
-            <button type="button" class="btn btn-outline-warning">Editar</button>
-            <button type="button" class="btn btn-outline-danger">Remover</button>
+            <button type="button" class="btn btn-outline-success">
+                Novo                
+              <div>
+                <i class="fas fa-plus" id="novo" data-toggle="modal" data-target="#hostFormModal" onclick="loadFormCreateHost()"></i>
+              </div>
+            </button>
+            <button type="button" class="btn btn-outline-warning">
+                Editar                
+                <div>
+                  <i class="fas fa-plus" id="novo" data-toggle="modal" data-target="#hostFormModal" onclick="loadFormCreateHost()"></i>
+                </div>
+            </button>
+            <button type="button" class="btn btn-outline-danger">
+                Remover                
+                <div>
+                  <i class="fas fa-plus" id="novo" data-toggle="modal" data-target="#hostFormModal" onclick="loadFormCreateHost()"></i>
+                </div>
+            </button>
         </div>
+        
+        
         <table class="table">
             <thead class="thead-dark">
                 <tr>
@@ -119,7 +174,6 @@
                 </tr>
             </tbody>
         </table>
-        </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
