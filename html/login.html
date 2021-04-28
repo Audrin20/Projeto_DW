@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/styleLogin.css">
 </head>
 <body>
-    <form class="form" action="../html/index.html">
+    <form class="form" id="formulario" action="../html/index.html">
         <div class="card">
             <div class="card-top">
                 <img class="imgLogin" src="../img/logo_gestoque.png" alt="">
@@ -16,12 +16,12 @@
             </div>
             <div class="card-group">
                 <label>User</label>
-                <input type="text" name="user" placeholder="Digite o seu email" required>
+                <input type="text" name="user" placeholder="Digite o seu email" id="user" required>
             </div>
 
             <div class="card-group">
                 <label>Senha</label>
-                <input type="password" name="Senha" placeholder="Digite sua senha" required>
+                <input type="password" name="Senha" placeholder="Digite sua senha" id="password" required>
             </div>
 
             <div class="card-group">
@@ -35,6 +35,7 @@
             <div class="registre">
                 <p>Ainda não tem conta? <a href="#">Registre-se</a></p>
             </div>
+            <script src="../js/index.js"></script>
         </div>
     </form>
 </body>

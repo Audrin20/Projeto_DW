@@ -1,0 +1,40 @@
+{
+  "estoque": [
+    {
+      "id": 1,
+      "nome": "José",
+      "preco": "50,00",
+      "dataDeModificacao": "2020-04-13"
+    },
+    {
+      "id": 2,
+      "nome": "AAA",
+      "preco": "5,00",
+      "dataDeModificacao": "2021-04-13"
+    },
+    {
+      "id": 3,
+      "nome": "AAA",
+      "preco": "5,00",
+      "dataDeModificacao": "2021-04-13"
+    },
+    {
+      "nome": "AAA",
+      "preco": "5,00",
+      "dataDeModificacao": "2021-04-13",
+      "id": 4
+    },
+    {
+      "nome": "AAA",
+      "preco": "5,00",
+      "dataDeModificacao": "2021-04-13",
+      "id": 5
+    },
+    {
+      "nome": "AAA",
+      "preco": "5,00",
+      "dataDeModificacao": "2021-04-13",
+      "id": 6
+    }
+  ]
+}
